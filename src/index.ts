@@ -15,7 +15,7 @@ app.get("/message", async (req, res) => {
     const { sender_id } = req.query as { sender_id: string };
     const { status, firstSong } = await generateLarkUserDesc(sender_id);
 
-    const musicUrl = `https://music.163.com/#/playlist?id=${firstSong?.id}`;
+    const musicUrl = `https://music.163.com/#/song?id=${firstSong?.id}`;
 
     if (status === RecentSongStatus.NOT_LOGIN) {
       res.json({
@@ -92,5 +92,5 @@ app.post("/bind", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server is running on port 3000", process.env.LARK_BOT_TOKEN);
+  console.log("Server is running on port 3000");
 });
