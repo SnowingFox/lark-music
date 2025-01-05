@@ -1,0 +1,29 @@
+{
+  "name": "netease-message",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch run ./src/index.ts",
+    "prisma:studio": "prisma studio",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.41.0",
+    "@prisma/client": "^6.1.0",
+    "NeteaseCloudMusicApi": "^4.25.0",
+    "express": "^4.21.2",
+    "qaq-font": "^1.0.2",
+    "ts-pattern": "^5.6.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.3",
+    "prisma": "^6.1.0",
+    "typescript": "^5"
+  }
+}
