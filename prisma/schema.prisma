@@ -27,7 +27,7 @@ model User {
 
 model LastSong {
     id Int @id @default(autoincrement())
-    songId Int
+    songId BigInt
     name String
     artistName String
     lastPlayTime DateTime
