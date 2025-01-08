@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/message*"
+to = "http://124.220.27.15:3000/message:splat"
+status = 200
+force = true
